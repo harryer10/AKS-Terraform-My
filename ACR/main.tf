@@ -1,6 +1,6 @@
 data "azurerm_key_vault" "azure_vault" {
      name               = var.keyvault_name
-     resource_groupname = var.keyvault_rg
+     resource_group_name = var.keyvault_rg
 }
 
 data "azurerm_key_vault_secret" "spn_id" {
