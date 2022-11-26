@@ -1,6 +1,6 @@
 keyvault_rg = "aks-harryer10-rg"
 keyvault_name = "aks-harryer10-cluster-kv"
 clientidkvsecret = "spn-id"
-rg_name = "aks-harryer10-cluster-rg"
+rg_name = "aks-harryer10-rg"
 rg_location = "southeastasia"
 acrname = "harryer10aksacr"
