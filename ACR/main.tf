@@ -1,4 +1,4 @@
-data "azurerm key_vault" "azure_vault" {
+data "azurerm_key_vault" "azure_vault" {
      name                = var.keyvault_name
      eresource_groupname = var.keyvault_rg
 }
