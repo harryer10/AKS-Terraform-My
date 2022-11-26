@@ -1,0 +1,6 @@
+keyvault_rg = "aksdemo-rg"
+keyvault_name = "aksdemocluster-kv"
+clientidkvsecret = "sh-id"
+rg_name = "aksdemocluster-rg"
+rg_location = "australiaeast"
+acrname = "demoaksacr1223"
