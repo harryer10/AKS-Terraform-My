@@ -9,7 +9,7 @@ data "azurerm_key_vault_secret" "spn_id" {
 }
 
 data "azuread_service_principal" "aksprincipal" {
-    application_id = data.azurerm_key_vault_secret.spnid.value
+    application_id = data.azurerm_key_vault_secret.spn_id.value
 }
 
 resource "azurerm_container_registry" "acr" {
