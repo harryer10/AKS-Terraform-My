@@ -1,6 +1,6 @@
 data "azurerm_key_vault" "azure_vault" {
-     name                = var.keyvault_name
-     eresource_groupname = var.keyvault_rg
+     name               = var.keyvault_name
+     resource_groupname = var.keyvault_rg
 }
 
 data "azurerm_key_vault_secret" "spn_id" {
@@ -14,7 +14,7 @@ data "azuread_service_principal" "aks_principal" {
 
 resource "azurerm_container_registry" "acr" {
     name                = var.acrname
-    resource_group_name =  var.rg_name
+    resource_group_name = var.rg_name
     location            = var.rg_location
     sku                 = "Basic"
     admin_enabled       = true
