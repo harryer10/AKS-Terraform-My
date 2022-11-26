@@ -3,13 +3,13 @@ data "azurerm_key_vault" "azure_vault" {
      resource_group_name = var.keyvault_rg
 }
 
-data "azurerm_key_vault_secret" "spn_id" {
+data "azurerm_key_vault_secret" "spn-id" {
     name         = var.clientidkvsecret
     key_vault_id = data.azurerm_key_vault.azure_vault.id
 }
 
 data "azuread_service_principal" "aks_principal" {
-    application_id = data.azurerm_key_vault_secret.spn_id.value
+    application_id = data.azurerm_key_vault_secret.spn-id.value
 }
 
 resource "azurerm_container_registry" "acr" {
