@@ -1,5 +1,5 @@
-keyvault_rg = "aksdemo-rg"
-keyvault_name = "aksdemocluster-kv"
+keyvault_rg = "aks-harryer10-rg"
+keyvault_name = "aks-harryer10-cluster-kv"
 clientidkvsecret = "spn-id"
 rg_name = "aksdemocluster-rg"
 rg_location = "southeastasia"
